@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <h:outputLabel value="View Student INFO"/><br></br>
+</f:view>
+
+<h:form>
+    <h:outputLabel for="StudentID1">
+        <h:outputText value="StudentID1: "></h:outputText>
+        <h:inputText id="StudentID1" value="#{StudentControl.st.studentID1}"></h:inputText>
+
+    </h:outputLabel>
+
+    <h:outputLabel for="StudentSec1">
+        <h:outputText value="StudentSec1 : "></h:outputText>
+        <h:inputText id="StudentSec1" value="#{StudentControl.st.sec1}"></h:inputText>
+
+    </h:outputLabel>
+
+    <h:outputLabel for="StudentID2">
+        <h:outputText value="StudentID2: "></h:outputText>
+        <h:inputText id="StudentID2" value="#{StudentControl.st.studentID2}"></h:inputText>
+    </h:outputLabel>
+
+    <h:outputLabel for="StudentSec2">
+        <h:outputText value="StudentName2 : "></h:outputText>
+        <h:inputText id="StudentSec2" value="#{StudentControl.st.sec2}"></h:inputText>
+
+    </h:outputLabel>
+
+    <h:commandButton value="View" action="#{StudentControl.viewINFO}"></h:commandButton>
+
+</h:form>
+</html>
