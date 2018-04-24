@@ -7,7 +7,8 @@ import javax.faces.bean.ManagedBean;
 
 public class StudentController {
 
-    Student st=new Student();
+    Student st=new Student("A",1);
+    Student st1=new Student("B",2);
 
     public Student getSt() {
         return st;
@@ -17,8 +18,16 @@ public class StudentController {
         this.st = st;
     }
 
-    public  String viewINFO()
+    public Student getSt1() {
+        return st1;
+    }
+
+    public void setSt1(Student st1) {
+        this.st1 = st1;
+    }
+
+    public String viewINFO()
     {
-        return "view";
+        return  "view";
     }
 }
